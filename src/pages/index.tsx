@@ -6,7 +6,7 @@ const pageStyles = {
   color: "#232129",
   padding: 96,
   // fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  backgroundImage: `url(${require("../images/business_card_blank.png").default})`,
+  backgroundImage: `url(${require("../images/green_background_vertical_low_quality.png").default})`,
   backgroundSize: "cover",
 
 }
@@ -18,7 +18,7 @@ const centered = {
 const headingStyles = {
   // marginTop: 0,
   // marginBottom: 64,
-  maxWidth: 320,
+  // maxWidth: 320,
   // fontFamily: ["Sancreek", 'cursive',],
   // fontFamily: "Sancreek",
   // textAlign: 'center'
