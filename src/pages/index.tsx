@@ -1,12 +1,14 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import * as CSS from 'csstype';
+import '../styles.css'
 const pageStyles = {
   color: "#232129",
   padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  // fontFamily: "-apple-system, Roboto, sans-serif, serif",
   backgroundImage: `url(${require("../images/business_card_blank.png").default})`,
   backgroundSize: "cover",
+
 }
 
 const centered = {
@@ -17,11 +19,14 @@ const headingStyles = {
   // marginTop: 0,
   // marginBottom: 64,
   maxWidth: 320,
+  // fontFamily: ["Sancreek", 'cursive',],
+  // fontFamily: "Sancreek",
   // textAlign: 'center'
   ...centered
 }
 const headingAccentStyles = {
-  color: "#663399",
+  // color: "#663399",
+  // fontFamily: "Sancreek",
   ...centered
 }
 const paragraphStyles = {
@@ -107,7 +112,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <h1 style={headingStyles}>
         Peter Irving
       </h1>
-      <h3 style={headingAccentStyles}>Generally Steppy Folk Music and the Occasional Dirge</h3>
+      <h3 style={headingAccentStyles}>Generally Steppy Folk Music</h3>
       {/* <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
         update in real-time. 😎
