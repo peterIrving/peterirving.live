@@ -6,9 +6,10 @@ const pageStyles = {
   color: "#232129",
   padding: 96,
   // fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  backgroundImage: `url(${require("../images/green_background_vertical_low_quality.png").default})`,
-  backgroundSize: "cover",
-
+  backgroundImage: `url(${require("../images/web_background_white.png").default})`,
+  // backgroundSize: "cover",
+  backgroundSize: "100% auto",
+  backgroundRepeat:"repeat-y",
 }
 
 const centered = {
@@ -109,6 +110,14 @@ const badgeStyle = {
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
+      <h1 style={headingStyles}>
+        Peter Irving
+      </h1>
+      <h3 style={headingAccentStyles}>Generally Steppy Folk Music</h3>
+      <h1 style={headingStyles}>
+        Peter Irving
+      </h1>
+      <h3 style={headingAccentStyles}>Generally Steppy Folk Music</h3>
       <h1 style={headingStyles}>
         Peter Irving
       </h1>
