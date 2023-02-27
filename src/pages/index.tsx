@@ -3,7 +3,8 @@ import type { HeadFC, PageProps } from "gatsby"
 import * as CSS from 'csstype';
 import '../styles.css'
 
-import BackgroundImage from "../images/green_background_vertical_low_quality.png";
+// @ts-ignore
+import BackgroundImage from "../images/green_background_vertical_low_quality.png"; // eslint-disable-line
 
 // const pageStyles = {
 //   color: "#232129",
@@ -114,6 +115,18 @@ const badgeStyle = {
 const IndexPage: React.FC<PageProps> = () => {
   return (<div>
     <img src={BackgroundImage} alt="background" className="image" />
+    <div style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      textAlign: "center",
+      color: "black",
+    }}>
+      <h2>Thank you for scanning my business card. This site is currently under construction</h2>
+      <h3> Peter Irving</h3>
+      <h5 style={headingAccentStyles}>Generally Steppy Folk Music</h5>
+    </div>
   </div>);
   // <main style={pageStyles}>
   //   <h1 style={headingStyles}>

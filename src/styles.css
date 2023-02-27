@@ -2,6 +2,8 @@ main {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: "flex";
+    flex-direction: "column";
 }
 
 .image {
@@ -19,6 +21,7 @@ main {
     margin: 0;
 } */
 
-h3 {
+h3,
+h4 {
     font-family: "Sancreek", cursive;
 }
