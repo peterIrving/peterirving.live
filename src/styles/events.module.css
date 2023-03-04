@@ -1,0 +1,15 @@
+/* .events ul {
+    display: table;
+} */
+
+.events div {
+    background-color: rgb(96, 104, 6);
+    width: 80%;
+    /* height: 100px; */
+    margin: 10px auto;
+    padding: 16px;
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+}

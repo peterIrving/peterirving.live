@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import Layout from './page_content';
-import * as styles from "../styles/tunes.module.css"
+import * as styles from "../styles/subpage.module.css"
 
 interface VideoProps {
     videoSrcURL: string;
@@ -30,7 +30,7 @@ const Video = ({ videoSrcURL, videoTitle }: VideoProps) => {
 
 const TuneBody: FC = () => {
     return <Layout>
-        <div className={styles.tunes}>
+        <div className={styles.subpage}>
             <h2>Tunes</h2>
             <h3>A Funky Application of Folk Music</h3>
             <Video videoSrcURL="https://www.youtube.com/embed/N8U6DdONxSk" videoTitle="Sittin on top of the world"></Video>

@@ -22,7 +22,9 @@ const Layout: FC<PropsWithChildren> = (props) => {
             marginRight: `${margin}px`,
             width: `calc(100% - ${margin * 2}px)`,
         }}> */}
-        <div className="content">
+        <div className="content" 
+        // style={{backgroundImage: "/web_background_white_3.png"}}
+        >
             {props.children}
         </div>
         <footer><p>Copyright 2023 Peter Irving</p></footer>
