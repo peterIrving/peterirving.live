@@ -1,20 +1,9 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import * as CSS from 'csstype';
-import '../styles.css'
+import TuneBody from "../components/tune_body";
+import HomeView from "../components/home_view";
 
-// @ts-ignore
-import BackgroundImage from "../images/green_background_vertical_low_quality.png"; // eslint-disable-line
-
-// const pageStyles = {
-//   color: "#232129",
-//   padding: 96,
-//   // fontFamily: "-apple-system, Roboto, sans-serif, serif",
-//   backgroundImage: `url(${require("../images/green_background_vertical_low_quality.png").default})`,
-//   // backgroundSize: "cover",
-//   backgroundSize: "100% auto",
-//   backgroundRepeat: "repeat-y",
-// }
 
 const centered = {
   textAlign: "center",
@@ -23,10 +12,6 @@ const centered = {
 const headingStyles = {
   marginTop: 64,
   marginBottom: 64,
-  // maxWidth: 320,
-  // fontFamily: ["Sancreek", 'cursive',],
-  // fontFamily: "Sancreek",
-  // textAlign: 'center'
   ...centered
 }
 const headingAccentStyles = {
@@ -114,68 +99,13 @@ const badgeStyle = {
 
 const IndexPage: React.FC<PageProps> = () => {
   return (<div>
-    <img src={BackgroundImage} alt="background" className="image" />
-    <div style={{
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      textAlign: "center",
-      color: "black",
-    }}>
-      <h2>Thank you for scanning my business card. This site is currently under construction</h2>
-      <h3> Peter Irving</h3>
-      <h5 style={headingAccentStyles}>Generally Steppy Folk Music</h5>
-    </div>
-  </div>);
-  // <main style={pageStyles}>
-  //   <h1 style={headingStyles}>
-  //     Peter Irving
-  //   </h1>
-  //   <h3 style={headingAccentStyles}>Generally Steppy Folk Music</h3>
+    <HomeView></HomeView>
+    {/* <LandingBody></LandingBody> */}
+   
+    {/* <Video videoSrcURL="https://www.youtube.com/embed/N8U6DdONxSk" videoTitle="Sittin on top of the world"></Video> */}
+  </div>
+  );
 
-  {/* <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
-        update in real-time. 😎
-      </p> */}
-  {/* <ul style={doclistStyles}>
-        {docLinks.map(doc => (
-          <li key={doc.url} style={docLinkStyle}>
-            <a
-              style={linkStyle}
-              href={`${doc.url}?utm_source=starter&utm_medium=ts-docs&utm_campaign=minimal-starter-ts`}
-            >
-              {doc.text}
-            </a>
-          </li>
-        ))}
-      </ul> */}
-  {/* <ul style={listStyles}>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter-ts`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul> */}
-  {/* <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      /> */}
-  // </main >
-  // )
 }
 
 export default IndexPage
