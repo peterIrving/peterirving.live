@@ -44,6 +44,13 @@ const listOfEvents = [
 const EventsView = () => {
 
     const filteredList = listOfEvents
+        /// This is a hack
+        .map(event => {
+            const newDate = new Date(event.startDate);
+            newDate.setDate(newDate.getDate() + 1); // Add one day
+            return new EventModel(event.projectName, event.venueName, newDate);
+        })
+        /// End Hack
         .filter((event) => event.startDate >= today)
         .sort((a, b) => a.startDate.getTime() - b.startDate.getTime());
     return (<Layout>
@@ -53,7 +60,7 @@ const EventsView = () => {
             <div className={eventStyles.events} >
 
 
-                {listOfEvents.map((event, index) =>
+                {filteredList.map((event, index) =>
                     <div key={index}>
                         <h3> {event.venueName}</h3>
                         <h4>{event.projectName}</h4>
