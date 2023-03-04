@@ -58,8 +58,6 @@ const EventsView = () => {
             <h2>Events</h2>
             <h3>Picking, Grinning and Occasionally Slapping the Bass</h3>
             <div className={eventStyles.events} >
-
-
                 {filteredList.map((event, index) =>
                     <div key={index}>
                         <h3> {event.venueName}</h3>
@@ -68,7 +66,6 @@ const EventsView = () => {
                     </div>
 
                 )}
-
             </div>
         </div>
     </Layout>);

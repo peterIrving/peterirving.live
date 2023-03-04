@@ -7,13 +7,17 @@
   font-family: "Montserrat";
   color: white;
 }
-html, body {
+
+html,
+body {
   min-height: 100%;
 }
+
 body {
   background: radial-gradient(at top left, rgb(155, 225, 43) 0%, rgb(107, 140, 0) 100%);
   background-repeat: no-repeat;
 }
+
 p {
   margin: 16px auto;
   line-height: 1.5em;
@@ -23,16 +27,22 @@ p {
 .layout {
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
+
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 40px auto;
 }
+
 nav .links {
   display: inline-block;
   text-align: right;
 }
+
 nav a {
   display: inline-block;
   margin-left: 20px;
@@ -40,10 +50,12 @@ nav a {
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
 }
+
 nav a:hover {
   border-color: white;
 }
-footer p{
+
+footer p {
   text-align: center;
   color: #bbb;
   margin: 40px auto;
