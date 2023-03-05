@@ -8,6 +8,7 @@ export default function NavBar() {
             <Link to="/">home</Link>
             <Link to="/tunes">tunes</Link>
             <Link to="/events">events</Link>
+            <a href="https://www.instagram.com/peter__irving/" target="_blank" ><img src="/icons8-instagram-48.png"></img></a>
         </div>
     </nav>)
 }

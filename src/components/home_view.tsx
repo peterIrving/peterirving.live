@@ -13,6 +13,7 @@ const HomeView = () => (<Layout>
             <h3> Peter Irving</h3>
             <p>Generally Steppy Folk Music</p>
             <Link className={styles.btn} to="/tunes">My Tunes</Link>
+         
         </div>
     </section>
 </Layout>)
