@@ -9,7 +9,7 @@ const HomeView = () => (<Layout>
             <h2>Welcome</h2>
             <h3> Peter Irving</h3>
             <p>Roots Americana Music</p>
-            <Link className={styles.btn} to="/tunes">My Tunes</Link>
+            <Link className={styles.btn} to="/music">My Tunes</Link>
         </div>
     </section>
 </Layout>)
