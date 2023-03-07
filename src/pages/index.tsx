@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import * as CSS from 'csstype';
-import TuneBody from "../components/tune_body";
+import TuneBody from "../components/music_body";
 import HomeView from "../components/home_view";
 
 

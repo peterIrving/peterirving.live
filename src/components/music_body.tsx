@@ -29,15 +29,18 @@ const Video = ({ videoSrcURL, videoTitle }: VideoProps) => {
     );
 }
 
-const TuneBody: FC = () => {
+const MusicBody: FC = () => {
     return <Layout>
         <div className={styles.subpage}>
-            <h2>Tunes</h2>
-            <h3>Folk Music for People to Dance to</h3>
+            <h2>Music</h2>
+            <h3>Roots Americana, Folk and Traditional Country</h3>
+            <Video videoSrcURL='https://www.youtube.com/embed/ZW3df6Z-eFU' videoTitle="Moanin' the Blues"></Video>
+            <Video videoSrcURL="https://www.youtube.com/embed/Em6ZJyD58K8" videoTitle="Blackest Crow"></Video>
             <Video videoSrcURL="https://www.youtube.com/embed/N8U6DdONxSk" videoTitle="Sittin on top of the world"></Video>
-            <Video videoSrcURL="https://www.youtube.com/embed/_xH3AvlFlBo" videoTitle="Sittin on top of the world"></Video>
-            <Video videoSrcURL="https://www.youtube.com/embed/ebwpye7kTt0" videoTitle="Sittin on top of the world"></Video>
+            <Video videoSrcURL="https://www.youtube.com/embed/EVUyzoDxw6g" videoTitle="Shady Grove"></Video>
+            <Video videoSrcURL="https://www.youtube.com/embed/_xH3AvlFlBo" videoTitle="Folsom Prison Blues"></Video>
+            <Video videoSrcURL="https://www.youtube.com/embed/ebwpye7kTt0" videoTitle="Paradise"></Video>
         </div>
     </Layout>
 }
-export default TuneBody;
+export default MusicBody;

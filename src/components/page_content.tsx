@@ -10,21 +10,11 @@ const Layout: FC<PropsWithChildren> = (props) => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     let margin = isTabletOrMobile ? 16 : 300;
-    // return <div style={{
-    //     backgroundImage: `url(${BackgroundImage})`,
-    //     backgroundSize: "cover",
-    //     height: "100vh"
-    // }}>
-    return <div className="layout">
+
+    return <div className="layout"
+        style={{ position: "relative", height: "100vh" }}>
         <NavBar />
-        {/* <div style={{
-            marginLeft: `${margin}px`,
-            marginRight: `${margin}px`,
-            width: `calc(100% - ${margin * 2}px)`,
-        }}> */}
-        <div className="content" 
-        // style={{backgroundImage: "/web_background_white_3.png"}}
-        >
+        <div>
             {props.children}
         </div>
         <footer><p>Copyright 2023 Peter Irving</p></footer>

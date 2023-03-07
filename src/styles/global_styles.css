@@ -64,4 +64,6 @@ footer p {
   text-align: center;
   /* color: #bbb; */
   margin: 40px auto;
+  grid-area: footer;
+
 }
