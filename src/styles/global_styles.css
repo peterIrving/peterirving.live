@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
+:root {
+  --background: #E8E7E1;
+  --ivy: #7E963B;
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: white;
+  color: black;
 }
 
 html,
@@ -14,8 +19,9 @@ body {
 }
 
 body {
-  background: radial-gradient(at top left, rgb(155, 225, 43) 0%, rgb(107, 140, 0) 100%);
-  background-repeat: no-repeat;
+  /* background: radial-gradient(at top left, rgb(155, 225, 43) 0%, rgb(107, 140, 0) 100%); */
+  /* background-repeat: no-repeat; */
+  background-color: var(--background);
 }
 
 p {
@@ -56,6 +62,6 @@ nav a:hover {
 
 footer p {
   text-align: center;
-  color: #bbb;
+  /* color: #bbb; */
   margin: 40px auto;
 }

@@ -10,7 +10,7 @@ const today = new Date();
 
 const listOfEvents = [
     new EventModel(
-        "Feature Performance",
+        "Feature Performance - Solo",
         "Linnemans",
         new Date("2023-03-15"),
     ),
@@ -34,7 +34,7 @@ const listOfEvents = [
         new Date("2023-03-30"),
     ),
     new EventModel(
-        "Ope! Brewing Co.",
+        "Playing Bass with Yonder",
         "Vendetta Coffee Bar",
         new Date("2023-03-30"),
     ),
@@ -56,10 +56,10 @@ const EventsView = () => {
     return (<Layout>
         <div className={subpageStyles.subpage}>
             <h2>Events</h2>
-            <h3>Picking, Grinning and Occasionally Slapping the Bass</h3>
+            <h3>Group and Solo Performances</h3>
             <div className={eventStyles.events} >
                 {filteredList.map((event, index) =>
-                    <div key={index}>
+                    <div className={eventStyles.events} key={index}>
                         <h3> {event.venueName}</h3>
                         <h4>{event.projectName}</h4>
                         <p>{event.startDate.toDateString()}</p>

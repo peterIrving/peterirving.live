@@ -12,12 +12,13 @@ interface VideoProps {
 const Video = ({ videoSrcURL, videoTitle }: VideoProps) => {
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    let bottomPadding = isTabletOrMobile ? 16 : 80
+    let bottomPadding = isTabletOrMobile ? 8 : 40
     console.log(`isTabletOrMobile ${isTabletOrMobile}`)
     return (
         <div
             style={{
                 paddingBottom: `${bottomPadding}px`,
+
             }}
         >
             <iframe
@@ -32,10 +33,10 @@ const TuneBody: FC = () => {
     return <Layout>
         <div className={styles.subpage}>
             <h2>Tunes</h2>
-            <h3>A Funky Application of Folk Music</h3>
+            <h3>Folk Music for People to Dance to</h3>
             <Video videoSrcURL="https://www.youtube.com/embed/N8U6DdONxSk" videoTitle="Sittin on top of the world"></Video>
-            <Video videoSrcURL="https://www.youtube.com/embed/ebwpye7kTt0" videoTitle="Sittin on top of the world"></Video>
             <Video videoSrcURL="https://www.youtube.com/embed/_xH3AvlFlBo" videoTitle="Sittin on top of the world"></Video>
+            <Video videoSrcURL="https://www.youtube.com/embed/ebwpye7kTt0" videoTitle="Sittin on top of the world"></Video>
         </div>
     </Layout>
 }

@@ -1,15 +1,18 @@
-/* .events ul {
-    display: table;
-} */
-
 .events div {
-    background-color: rgb(96, 104, 6);
+    background-color: var(--ivy);
     width: 80%;
-    /* height: 100px; */
     margin: 10px auto;
     padding: 16px;
-    /* text-align: center; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
+}
+
+.events p {
+    color: white;
+}
+
+.events h3 {
+    color: white;
+}
+
+.events h4 {
+    color: white;
 }
